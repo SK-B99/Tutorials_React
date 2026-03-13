@@ -1,0 +1,135 @@
+/* ─── Body ───────────────────────────────────────────────── */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+}
+
+/* ─── Root container ─────────────────────────────────────── */
+#root {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: clamp(1rem, 3vw, 2rem);
+  text-align: center;
+}
+
+/* ─── Main container ─────────────────────────────────────── */
+.container {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 30px;
+  background: rgb(212, 225, 230);
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* ─── Title ──────────────────────────────────────────────── */
+.title {
+  margin-bottom: 20px;
+  font-size: 32px;
+  color: #333;
+}
+
+/* ─── Description text ───────────────────────────────────── */
+.description {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+/* ─── User list ──────────────────────────────────────────── */
+.userList {
+  list-style: none;
+  padding: 0;
+}
+
+.userList li {
+  background: #f5f7ff;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.userList li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ─── Loading text ───────────────────────────────────────── */
+.loading {
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* ─── Logo ───────────────────────────────────────────────── */
+.logo {
+  height: clamp(4em, 5vw + 2em, 6em);
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* ─── Logo spin animation ────────────────────────────────── */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* ─── Card ───────────────────────────────────────────────── */
+.card {
+  padding: clamp(1rem, 2vw, 2em);
+}
+
+/* ─── Read the docs ──────────────────────────────────────── */
+.read-the-docs {
+  color: #888;
+  font-size: clamp(0.8rem, 0.7rem + 0.4vw, 1rem);
+}
+
+/* ─── Mobile (≤ 480px) ───────────────────────────────────── */
+@media (max-width: 480px) {
+  .logo {
+    padding: 1em;
+  }
+  .card {
+    padding: 1rem;
+  }
+}
+
+/* ─── Tablet (481px – 768px) ─────────────────────────────── */
+@media (min-width: 481px) and (max-width: 768px) {
+  .logo {
+    padding: 1.25em;
+  }
+}
+
+/* ─── Small desktop (769px – 1024px) ────────────────────── */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #root {
+    padding: 1.5rem;
+  }
+}
