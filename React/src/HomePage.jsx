@@ -1,27 +1,8 @@
 import "./HomePage.css";
-
+import { Link } from "react-router-dom";
 const HomePage = () => {
   return (
     <div className="home-page">
-      {/* Navbar */}
-      <nav className="navbar">
-        <div className="nav-logo">Fabbles</div>
-        <ul className="nav-links">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Users</a>
-          </li>
-          {/* <li>
-            <a href="#">Services</a>
-          </li> */}
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-      </nav>
-
       {/* Hero */}
       <section className="hero">
         <div className="hero-content">

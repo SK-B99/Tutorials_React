@@ -1,0 +1,11 @@
+.navbar {
+  background: #e7e3a3;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
