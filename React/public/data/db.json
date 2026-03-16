@@ -1,7 +1,40 @@
 {
   "users": [
-    { "id": 1, "name": "Prosper" },
-    { "id": 2, "name": "Mary" },
-    { "id": 3, "name": "David" }
-  ]
+    {
+      "id": "1",
+      "name": "Prosper Gyinka",
+      "email": "prosper@cr.com",
+      "password": "dfrewrw",
+      "role": "user"
+    },
+    {
+      "id": "2",
+      "name": "Michelle Yeboah",
+      "email": "mary@cr.com",
+      "password": "rtr444",
+      "role": "user"
+    },
+    {
+      "id": "3",
+      "name": "Eric Osei David",
+      "email": "david@cr.com",
+      "password": "see322",
+      "role": "user"
+    },
+    {
+      "id": "2b1a",
+      "name": "Bernard Owusu",
+      "email": "aboa.boni360@gmail.com",
+      "password": "wewerer888S",
+      "role": "developer"
+    },
+    {
+      "id": "f3af",
+      "name": "James Owusu",
+      "email": "ambylonn2@cr.com",
+      "password": "uueyi8ew87ewi",
+      "role": "designer"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
